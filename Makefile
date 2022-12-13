@@ -6,7 +6,7 @@
 #    By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/13 07:10:18 by dpalmer           #+#    #+#              #
-#    Updated: 2022/12/13 07:22:38 by dpalmer          ###   ########.fr        #
+#    Updated: 2022/12/13 10:20:48 by dpalmer          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,14 +14,15 @@
 
 # Variables
 
-NAME		= libft_mini.a
-INCLUDE		= include
-LIBFT		= libft
-SRC_DIR		= src/
-OBJ_DIR		= objs/
-CC			= cc
-CFLAGS		= -Wall -Werror -Wextra -I
-AR			= ar rcs
+NAME		=	client
+NAMESV		=	server
+INCLUDE		=	include
+LIBFT		=	libft
+SRC_DIR		=	src/
+OBJ_DIR		=	objs/
+CC			=	cc
+CFLAGS		=	-Wall -Werror -Wextra -I
+AR			=	ar rcs
 
 # Colors
 
@@ -34,9 +35,8 @@ CYAN = \033[0;96m
 
 #Sources
 
-SRC_FILES	=	ft_conv_utils	\
-				ft_pf_printers	\
-				ft_printf
+SRC_FILES	=	client	\
+				server
 
 
 SRC 		= 	$(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
@@ -51,8 +51,8 @@ all:		$(NAME)
 $(NAME):	$(OBJ)
 			@make -C $(LIBFT)
 			@cp $(LIBFT)/libft.a .
-			@mv libft.a $(NAME)
-			@$(AR) $(NAME) $(OBJ)
+# 			@mv libft.a $(NAME)
+#			@$(AR) $(NAME) $(OBJ)
 			@echo "\n$(B_MAGENTA)FT_PRINTF COMPILED SUCCESSFULLY$(C_RESET)"
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c
@@ -69,7 +69,7 @@ clean:
 fclean:		clean
 			rm -f $(NAME)
 			@echo "$(CYAN)FT_PRINTF EXECUTABLE FILES DELETED$(C_RESET)"
-			rm -f $(LIBFT)/libft.a
+			rm -f libft.a
 			@echo "$(CYAN)LIBFT EXECUTABLE FILES DELETED$(C_RESET)"
 
 re:			fclean all
