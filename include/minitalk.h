@@ -6,7 +6,7 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 12:44:04 by dpalmer           #+#    #+#             */
-/*   Updated: 2022/12/12 15:14:19 by dpalmer          ###   ########.fr       */
+/*   Updated: 2022/12/13 06:38:25 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@
 # include <signal.h>
 # include "../libft/include/libft.h"
 
-# define M_DELAY 100
+# define SIG_DELAY 100
 
 #endif
