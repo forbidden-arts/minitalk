@@ -6,7 +6,7 @@
 #    By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/13 07:10:18 by dpalmer           #+#    #+#              #
-#    Updated: 2022/12/13 10:57:27 by dpalmer          ###   ########.fr        #
+#    Updated: 2022/12/15 12:20:29 by dpalmer          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,7 +60,7 @@ $(NAME):	$(OBJ)
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 			@mkdir -p $(OBJ_DIR)
-			@echo "$(GREEN)Compiling: $(YELLOW) $< $(C_RESET)"
+			@echo "$(GREEN)Compiling: $(YELLOW)$<$(C_RESET)"
 			@$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
 #			@echo "$(B_MAGENTA)FT_PRINTF COMPILED$(C_RESET)"
 
