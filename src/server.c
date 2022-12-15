@@ -6,7 +6,7 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 09:32:12 by dpalmer           #+#    #+#             */
-/*   Updated: 2022/12/15 10:46:55 by dpalmer          ###   ########.fr       */
+/*   Updated: 2022/12/15 10:59:08 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ int	main(void)
 
 	pid = getpid();
 	ft_printf("PID:\t%d\n", pid);
-	ft_printf("Waiting...\n");
 	sa.sa_sigaction = ft_sig_handler;
 	while (1)
 	{

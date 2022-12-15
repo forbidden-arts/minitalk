@@ -6,7 +6,7 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 09:32:32 by dpalmer           #+#    #+#             */
-/*   Updated: 2022/12/15 10:13:33 by dpalmer          ###   ########.fr       */
+/*   Updated: 2022/12/15 10:55:32 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,6 @@ int	main(int argc, char **argv)
 	pid = ft_atoi(argv[1]);
 	while (argv[2][i])
 	{
-		signal(SIGUSR1, ft_confirm);
 		signal(SIGUSR2, ft_confirm);
 		ft_send_byte(pid, argv[2][i]);
 		i++;
