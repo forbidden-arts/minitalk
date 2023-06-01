@@ -5,34 +5,36 @@
 
 ![dpalmer's 42 minitalk Score](https://badge42.vercel.app/api/v2/cli5pb141011308mh1fmi5qrq/project/2909191)
 
-## 🪧 Overview
-Ah yes, the ever-useful printf: quick debugger of code, handler of an unspecified number of arguments, and **pain in my butt.**
+## 🤓 Overview
+How do different programs talk to each other? They match on Tinder and then go for coffee.
 
-Well, at least at first. The purpose of this project is to get familiar with variadic arguments. For those of you who are _not_ nerds, that's a nerdy way of saying that you can give this function a lot of different stuff, and it should be able to handle all (or at least most) of the crazy things you ask it to do.
-
-After staring at the requirements for a few days, I decided to jump in head first, which later taught me a valuable lesson: not exhaustively considering all the corner cases means a lot of refactoring. This was the first project that I did not max-out the bonuses, as when it came time to add them, I realized that it would require a 💪Herculean💪 rewrite that would toss 75% of what I had written in the trash.
-
-Lesson learned.
-
-Little known fact: the 'f' stands for "Ah, 🤬, I should have thought of that" and also for "format", according to the man pages.
-
-
-This has been integrated into [libft](https://github.com/forbidden-arts/libft).
+Alternatively, the grab the Unicode value for any particular character, convert it into binary, and then send a bunch of ones-and-zeros to each other. Believe it or not, that's a super-simplified version of how the internet works. It's also an explanation of this project, where a "client" program sends text to a "server". For the purposes of MiniTalk, this all happens on a single computer, but it is a proof of concept on how to get different programs/machines/super-intelligent AI overlords to speak to communicate.
 
 ## 📷 Preview
-Want to send a message to the user? Want to show memory addresses? Want to print numbers? Maybe letters, but as numbers? Yeah, this will do that. The integrated version in [libft](https://github.com/forbidden-arts/libft) is probably more up to date. This is just here for posterity (or lack thereof).
-
-To make myself feel better, I added some color to the makefile. Pretty fancy, right?
 
 ![Screenshot](./assets/minitalk_gif.gif)
 
 ## 💻 Compilation
 To compile:
+
 ```make```
+
 Remove the object files:
+
 ```make clean```
+
 Remove everything:
+
 ```make fclean```
+## 🤡 Usage
+If that mind-blowing gif was not enough, I'll happily break down how what's going on! After compiling, there should be two (2) executables, "./server" and "./client".
+
+Start the ```./server``` first with no arguments. It will display an ID number that your local computer generates.
+
+Now, fire up that bad-boy client like so:
+```./client``` ```[whatever number the server displays]``` and ```add a message **in quotes**.```
+
+Pray to the old gods and the new, and then watch the magic happen.
 
 ### 📝 License
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
