@@ -1,2 +1,6 @@
-a.out
-test.c
+client
+server
+libft/*
+.DS_Store
+*.o
+libft.a
