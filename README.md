@@ -1,9 +1,9 @@
 # minitalk
-![dpalmer's 42 stats](https://badge42.vercel.app/api/v2/cli5pb141011308mh1fmi5qrq/stats?cursusId=21&coalitionId=271)
+<!-- ![dpalmer's 42 stats](https://badge42.vercel.app/api/v2/cli5pb141011308mh1fmi5qrq/stats?cursusId=21&coalitionId=271) -->
 
 ![Achievement Unlocked!](./assets/minitalkm.png)
 
-![dpalmer's 42 minitalk Score](https://badge42.vercel.app/api/v2/cli5pb141011308mh1fmi5qrq/project/2909191)
+<!-- ![dpalmer's 42 minitalk Score](https://badge42.vercel.app/api/v2/cli5pb141011308mh1fmi5qrq/project/2909191) -->
 
 ## 🤓 Overview
 How do different programs talk to each other? They match on Tinder and then go for coffee.
